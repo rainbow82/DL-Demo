@@ -1,0 +1,19 @@
+{
+    "intents": [
+        {
+        "intent": "GetWhatsNew"
+        },
+        {
+        "intent": "AMAZON.HelpIntent"
+        },
+        {
+        "intent": "AMAZON.StopIntent"
+        },
+        {
+        "intent": "AMAZON.CancelIntent"
+        },
+        {
+        "intent": "UnhandledIntent"
+        }
+    ]
+}
