@@ -6,7 +6,8 @@ var languageStrings = {
     "en": {
         "translation": {
             "SKILL_NAME" : "Down Load",
-            // "GET_COMPLIMENT_MESSAGE" : "Here's your compliment: ",
+            //  "GET_COMPLIMENT_MESSAGE" : "Here's your compliment: ",
+            "GET_RESPONSE" : "The top things on download are: ",
             "HELP_MESSAGE" : "You can ask What's new, or, you can say exit... What can I help you with?",
             "HELP_REPROMPT" : "What can I help you with?",
             "STOP_MESSAGE" : "Goodbye!"
@@ -75,8 +76,8 @@ var handlers = {
 
         // Create speech output
         // var speechOutput = this.t("GET_COMPLIMENT_MESSAGE") + randomCompliment;
-        var speechOutput = "The newest things on Download are Dropler Lite, Busy Contacts, and Code Kit.";
-        this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), randomCompliment)
+        var speechOutput = this.t("GET_RESPONSE") + "Dropler Lite, Busy Contacts, and Code Kit.";
+        this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"))
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = this.t("HELP_MESSAGE");
